@@ -1,0 +1,12 @@
+api_platform:
+  formats:
+    json: ['application/json']
+    jsonld: { mime_types: [ "application/ld+json" ] }
+  swagger:
+    api_keys:
+      JWT:
+        name: Authorization
+        type: header
+
+  title: 'Pentiminax API'
+  version: '1.0.0'

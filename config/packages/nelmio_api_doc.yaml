@@ -1,0 +1,19 @@
+nelmio_api_doc:
+    areas:
+        path_patterns: # an array of regexps
+            - ^/api(?!/doc$)
+        host_patterns:
+            - ^api\.
+    documentation:
+        info:
+            title: My App
+            description: This is an awesome app!
+            version: 1.0.0
+        securityDefinitions:
+            Bearer:
+                type: JWT
+                description: 'Value: Bearer {jwt}'
+                name: Authorization
+                in: header
+        security:
+            - Bearer: []

@@ -1,0 +1,6 @@
+gesdinet_jwt_refresh_token:
+    refresh_token_class: App\Entity\RefreshToken
+    ttl: 2592000
+    token_parameter_name: refreshToken
+    return_expiration: true
+    #firewall: api //ajouter ce ligne si changer le firewall pardefault api 
